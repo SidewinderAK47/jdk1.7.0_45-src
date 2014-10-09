@@ -170,7 +170,7 @@ public abstract class AbstractSet<E> extends AbstractCollection<E> implements Se
 
         if (size() > c.size()) {
             for (Iterator<?> i = c.iterator(); i.hasNext(); )
-                modified |= remove(i.next());
+				modified |= remove(i.next());
         } else {
             for (Iterator<?> i = iterator(); i.hasNext(); ) {
                 if (c.contains(i.next())) {
